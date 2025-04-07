@@ -15,8 +15,134 @@
     --text-color:white;
     --main-color: #04fffb
 }
+/* Responsive Navbar Dropdown */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: var(--second-bg-color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        padding: 1rem 0;
+    }
 
+    .navbar a {
+        margin: 1rem 0;
+        text-align: center;
+    }
 
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 2rem 5%;
+    }
+    .navbar a {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+    .home-content p {
+        font-size: 1.2rem;
+    }
+    .home-img img {
+        width: 40vw;
+    }
+    .about-content h1 {
+        font-size: 30px;
+    }
+    .about-content h2 {
+        font-size: 20px;
+    }
+    .about-me p {
+        font-size: 15px;
+    }
+    .skills-container h1 {
+        font-size: 30px;
+    }
+    .skill h3 {
+        font-size: 15px;
+    }
+    form input,
+    form textarea {
+        width: 80%;
+    }
+    form button {
+        width: 50%;
+    }
+    .footer h1 {
+        font-size: 30px;
+    }
+    .footer p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 1.5rem 3%;
+    }
+    .navbar a {
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+    .home-content h1 {
+        font-size: 4rem;
+    }
+    .home-content h3 {
+        font-size: 2rem;
+    }
+    .home-content p {
+        font-size: 1rem;
+    }
+    .home-img img {
+        width: 60vw;
+    }
+    .about-content h1 {
+        font-size: 25px;
+    }
+    .about-content h2 {
+        font-size: 18px;
+    }
+    .about-me p {
+        font-size: 14px;
+    }
+    .skills-container h1 {
+        font-size: 25px;
+    }
+    .skill h3 {
+        font-size: 14px;
+    }
+    form input,
+    form textarea {
+        width: 90%;
+    }
+    form button {
+        width: 70%;
+    }
+    .footer h1 {
+        font-size: 25px;
+    }
+    .footer p {
+        font-size: 1.2rem;
+    }
+}
 /* Success Message */
 #success-msg {
     display: none;
